@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet" />
-
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
 </head>
@@ -25,7 +25,7 @@
         
         <div class="row justify-content-center">
             <div class="col-8">
-                <form>
+                <form id="calculator">
                     <div class="form-group">
                         <input type="number" class="form-control" id="inputOne">
                     </div>                   
@@ -35,17 +35,17 @@
                     <div class="form-group">
                         <h1 id="result">____</h1>
                     </div>                   
-                   
-                    <button type="submit" class="btn btn-primary" onclick="tambah()">+</button>
-                    <button type="submit" class="btn btn-primary">-</button>
-                    <button type="submit" class="btn btn-primary">x</button>
-                    <button type="submit" class="btn btn-primary">/</button>
-                    <button type="submit" class="btn btn-primary">=</button>
+                    
+                    <button type="button" class="btn btn-success" onclick="tambah()">+</button>
+                    <button type="button" class="btn btn-success" onclick="kurang()">-</button>
+                    <button type="button" class="btn btn-success" onclick="kali()">x</button>
+                    <button type="button" class="btn btn-success" onclick="bagi()">/</button>
+                    <button type="button" class="btn btn-success" onclick="hapus()">Reset</button>
                 </form>
             </div>
         </div>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
